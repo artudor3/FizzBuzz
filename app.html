@@ -52,49 +52,63 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            
-                
-                    <h1>FizzBuzz: A Coding Challenge</h1>
-                    
-                    <h2 class="mt-5 border-bottom border-3 border-dark">Instructions</h2>
-                    <ul>
-                        <li>Write a program that prints the numbers from 1 to 100.</li>
-                        <li>But for multiples of three print “Fizz”
-                        instead of the number and for the multiples of five print “Buzz”.</li>
-                        <li>For numbers which are multiples
-                        of both threeand five print “FizzBuzz”.</li>
-                    </ul> 
-                    <div class="row">
-                        <div class="col">
 
-                        </div>
+
+            <h1>FizzBuzz: A Coding Challenge</h1>
+
+            <h2 class="mt-5 border-bottom border-3 border-dark">Instructions</h2>
+            <ul>
+                <li>Write a program that prints the numbers from 1 to 100.</li>
+                <li>But for multiples of three print “Fizz”
+                    instead of the number and for the multiples of five print “Buzz”.</li>
+                <li>For numbers which are multiples
+                    of both threeand five print “FizzBuzz”.</li>
+            </ul>
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="startNumber" class="form-label fw-bold">Enter number to START from:</label>
+                        <input id="startNumber" name="startNumber" type="number" class="form-control"
+                            placeholder="Start Number" value=1 aria-label="Start Number">
                     </div>
-                    <form class="row">
-                        <div class="col">
-                            <label for="fizzNumber" class="form-label fw-bold">Enter FIZZ number:</label>
-                            <input id="fizzNumber" name="fizzNumber" type="number" class="form-control"
-                                placeholder="Fizz Number" value=3 aria-label="Fizz Number">
-                        </div>
-                        <div class="col">
-                            <label for="buzzNumber" class="form-label fw-bold">Enter BUZZ number:</label>
-                            <input id="buzzNumber" name="buzzNumber" type="number" class="form-control"
-                                placeholder="Buzz Number" value=5 aria-label="Buzz Number">
-                        </div>
-                        <div class="col-12 d-flex justify-content-start justify-content-lg-end">
-                            <button id="btnSubmit" type="button" class="btn btn-primary btn-lg mt-2">Buzz It</button>
-                        </div>
-                    </form>
-                    <div class="table-responsive mt-3">
-                        <table class="table table-hover table-striped table-sm">
-                            <tbody id="results">
-                                <!--Content Goes Here-->
-
-                            </tbody>
-                        </table>
+                    <div class="col">
+                        <label for="endNumber" class="form-label fw-bold">Enter number to END with:</label>
+                        <input id="endNumber" name="endNumber" type="number" class="form-control"
+                            placeholder="End Number" value=100 aria-label="End Number">
                     </div>
+                </div>
+                <div class="row">
+                <div class="col">
+                    <label for="fizzNumber" class="form-label fw-bold">Enter <span class="fizz">FIZZ</span> number:</label>
+                    <input id="fizzNumber" name="fizzNumber" type="number" class="form-control"
+                        placeholder="Fizz Number" value=3 aria-label="Fizz Number">
+                </div>
+                <div class="col">
+                    <label for="buzzNumber" class="form-label fw-bold">Enter <span class="buzz">BUZZ</span> number:</label>
+                    <input id="buzzNumber" name="buzzNumber" type="number" class="form-control"
+                        placeholder="Buzz Number" value=5 aria-label="Buzz Number">
+                </div>
+            </div>
+                <div class="col-12 d-flex justify-content-start justify-content-lg-end">
+                    <button id="btnSubmit" type="button" class="btn btn-primary btn-lg mt-2">Buzz It</button>
+                </div>
+            </form>
+            <div class="table-responsive mt-3">
+                <table class="table table-hover table-striped table-sm">
+                    <tbody id="results">
+                        <!--Content Goes Here-->
 
-                
-            
+                    </tbody>
+                </table>
+            </div>
+
+
+
         </div>
     </main>
 

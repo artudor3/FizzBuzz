@@ -1,16 +1,17 @@
 function getValues() {
     let fizzNum = document.getElementById("fizzNumber").value;
     let buzzNum = document.getElementById("buzzNumber").value;
+    let startNum = document.getElementById("startNumber").value;
+    let endNum = document.getElementById("endNumber").value;
 
     fizzNum = parseInt(fizzNum);
     buzzNum = parseInt(buzzNum);
+    startNum = parseInt(startNum);
+    endNum = parseInt(endNum);
 
-    let startNumber = 1;
-    let endNumber = 100;
+    if (Number.isInteger(fizzNum) && Number.isInteger(buzzNum) && Number.isInteger(startNum) && Number.isInteger(endNum)) {
 
-    if (Number.isInteger(fizzNum) && Number.isInteger(buzzNum)) {
-
-        let numbers = generateNumbers(startNumber, endNumber);
+        let numbers = generateNumbers(startNum, endNum);
 
         displayNumbers(numbers, fizzNum, buzzNum);
 
@@ -18,7 +19,7 @@ function getValues() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Only Integers are allowed for Hundo, please enter both values'
+            text: 'Only Integers are allowed for FizzBuzz, please enter correctly in all values'
         });
     }
 }
