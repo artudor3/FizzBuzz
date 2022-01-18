@@ -13,7 +13,7 @@ function getValues() {
 
         let numbers = generateNumbers(startNum, endNum);
 
-        displayNumbers(numbers, fizzNum, buzzNum);
+        displayNumbers(numbers, fizzNum, buzzNum, endNum, startNum);
 
     } else {
         Swal.fire({
@@ -34,7 +34,7 @@ function generateNumbers(start, end) {
     return numbers;
 }
 
-function displayNumbers(numArr, fizz, buzz) {
+function displayNumbers(numArr, fizz, buzz, end, start) {
     let templateRows = '';
     let row = '';
     let rowCount = 0;
@@ -66,7 +66,7 @@ function displayNumbers(numArr, fizz, buzz) {
 
         row += `<td class="${className}">${numString}</td>`;
 
-        if (rowCount == 10) {
+        if (rowCount == 10 || i == (end - start)) {
             row += `</tr>`;
             templateRows += row;
             rowCount = 0;
