@@ -34,6 +34,26 @@ main>.container {
     color: var(--at-secondary-color);
 }
 
+/* ---- FIZZ BUZZ STYLES ---- */
+.fizz {
+    font-weight: bolder;
+    color: yellow;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+.buzz {
+    font-weight: bold;
+    color: var(--at-secondary-color);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
+.fizzBuzz {
+    font-weight: 900;
+    color: red;
+}
+
+
+
 /*-- BUTTON STYLES OVERRIDE BOOTSTRAP STYLES --*/
 .btn-outline-primary{
     color: var(--at-dark-color);
