@@ -45,14 +45,14 @@ function displayNumbers(numArr, fizz, buzz, end, start) {
         let numString = numArr[i];
 
         if (num % fizz == 0 && num % buzz == 0) {
-            className = "fizzBuzz";
+            className = "FizzBuzz";
             numString = "FizzBuzz";
         } else {
             if (num % fizz == 0) {
-                className = "fizz";
+                className = "Fizz";
                 numString = "Fizz";
             } else if (num % buzz == 0) {
-            className = "buzz";
+            className = "Buzz";
             numString = "Buzz";
             } else {
             className = "";

@@ -35,19 +35,19 @@ main>.container {
 }
 
 /* ---- FIZZ BUZZ STYLES ---- */
-.fizz {
+.Fizz {
     font-weight: bolder;
     color: yellow;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
 }
-.buzz {
+.Buzz {
     font-weight: bold;
     color: var(--at-secondary-color);
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: black;
 }
-.fizzBuzz {
+.FizzBuzz {
     font-weight: 900;
     color: red;
 }
